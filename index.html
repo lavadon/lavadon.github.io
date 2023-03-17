@@ -77,7 +77,18 @@
 		<p>Aliquam in lacus eu elit blandit interdum. Morbi auctor lectus vel diam tincidunt, at ultricies justo dapibus. Integer vel convallis massa. Vivamus vitae velit tincidunt, euismod ipsum in, malesuada nisi. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Sed convallis posuere nulla, a rutrum nibh commodo ac. Sed convallis sollicitudin enim vel gravida. Vestibulum in bibendum nulla.</p>
 
 		<p>Donec vehicula scelerisque lorem a bibendum. Sed tempor neque lectus, id rhoncus augue placerat sed. Vestibulum varius, odio a tincidunt lacinia, purus augue dictum erat, id commodo lectus orci quis lorem. Praesent euismod luctus ex, non hendrerit dolor pretium non. Nam ultrices in urna sed suscipit. Suspendisse pot
-        <p><a href="#">Learn more</a></p>
+
+			<button onclick="logFromPython()">Click Me to Run Some Python</button>
+	<script>
+	    function logFromPython(){
+	        pyscript.interpreter.interface.runPython(`
+	            animal = "Python"
+	            sound = "sss"
+	            console.warn(f"{animal}s go " + sound * 5)
+	        `)
+	    }
+	</script>
+		<p><a href="#">Learn more</a></p>
 	</main>
 </body>
 </html>
