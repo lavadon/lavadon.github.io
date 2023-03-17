@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>My Website</title>
+	<style>
+		body {
+			background-color: #000;
+			color: #fff;
+			font-family: Arial, sans-serif;
+			font-size: 16px;
+			line-height: 1.5;
+		}
+
+		body.light-mode {
+			background-color: #fff;
+			color: #000;
+		}
+
+		header {
+			background-color: #222;
+			padding: 10px;
+			text-align: center;
+		}
+
+		h1 {
+			font-size: 36px;
+			margin: 0;
+		}
+
+		main {
+			max-width: 800px;
+			margin: 0 auto;
+			padding: 20px;
+			text-align: justify;
+		}
+
+		p {
+			margin-bottom: 20px;
+		}
+
+		a {
+			color: #ccc;
+			text-decoration: none;
+		}
+
+		a:hover {
+			color: #fff;
+		}
+
+		.theme-button {
+			background-color: #333;
+			color: #fff;
+			border: none;
+			padding: 10px 20px;
+			border-radius: 5px;
+			cursor: pointer;
+			margin-bottom: 20px;
+		}
+
+		.theme-button:hover {
+			background-color: #666;
+		}
+	</style>
+	<script>
+		function toggleTheme() {
+			document.body.classList.toggle('light-mode');
+		}
+	</script>
+</head>
+<body>
+	<header>
+		<h1>My Website</h1>
+	</header>
+	<main>
+		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed at nisi euismod, feugiat urna in, faucibus justo. Fusce vulputate blandit metus id rutrum. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Aenean ut enim sapien. Nullam accumsan, mauris quis lacinia hendrerit, libero augue placerat leo, ut hendrerit sapien nisl nec arcu. Morbi euismod ante id leo tempor, in vehicula neque tristique. Sed scelerisque lorem vitae risus maximus, id aliquam ipsum pharetra. Curabitur quis risus id sapien molestie congue. Ut dictum a nulla nec euismod.</p>
+
+		<p>Aliquam in lacus eu elit blandit interdum. Morbi auctor lectus vel diam tincidunt, at ultricies justo dapibus. Integer vel convallis massa. Vivamus vitae velit tincidunt, euismod ipsum in, malesuada nisi. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Sed convallis posuere nulla, a rutrum nibh commodo ac. Sed convallis sollicitudin enim vel gravida. Vestibulum in bibendum nulla.</p>
+
+		<p>Donec vehicula scelerisque lorem a bibendum. Sed tempor neque lectus, id rhoncus augue placerat sed. Vestibulum varius, odio a tincidunt lacinia, purus augue dictum erat, id commodo lectus orci quis lorem. Praesent euismod luctus ex, non hendrerit dolor pretium non. Nam ultrices in urna sed suscipit. Suspendisse pot
+        <p><a href="#">Learn more</a></p>
+	</main>
+</body>
+</html>
