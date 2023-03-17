@@ -2,71 +2,8 @@
 <html>
 <head>
 	<title>My Website</title>
-	<style>
-		body {
-			background-color: #000;
-			color: #fff;
-			font-family: Arial, sans-serif;
-			font-size: 16px;
-			line-height: 1.5;
-		}
+	<link rel="stylesheet" type="text/css" href="style.css">
 
-		body.light-mode {
-			background-color: #fff;
-			color: #000;
-		}
-
-		header {
-			background-color: #222;
-			padding: 10px;
-			text-align: center;
-		}
-
-		h1 {
-			font-size: 36px;
-			margin: 0;
-		}
-
-		main {
-			max-width: 800px;
-			margin: 0 auto;
-			padding: 20px;
-			text-align: justify;
-		}
-
-		p {
-			margin-bottom: 20px;
-		}
-
-		a {
-			color: #ccc;
-			text-decoration: none;
-		}
-
-		a:hover {
-			color: #fff;
-		}
-
-		.theme-button {
-			background-color: #333;
-			color: #fff;
-			border: none;
-			padding: 10px 20px;
-			border-radius: 5px;
-			cursor: pointer;
-			margin-bottom: 20px;
-		}
-
-		.theme-button:hover {
-			background-color: #666;
-		}
-	</style>
-	<script>
-		function toggleTheme() {
-			document.body.classList.toggle('light-mode');
-		}
-	</script>
-	<script defer src="https://pyscript.net/latest/pyscript.js">
 </head>
 <body>
 	<header>
@@ -79,17 +16,7 @@
 
 		<p>Donec vehicula scelerisque lorem a bibendum. Sed tempor neque lectus, id rhoncus augue placerat sed. Vestibulum varius, odio a tincidunt lacinia, purus augue dictum erat, id commodo lectus orci quis lorem. Praesent euismod luctus ex, non hendrerit dolor pretium non. Nam ultrices in urna sed suscipit. Suspendisse pot
 
-			<button onclick="logFromPython()">Click Me to Run Some Python</button>
-	<script>
-	    function logFromPython(){
-	        pyscript.interpreter.interface.runPython(`
-	            animal = "Python"
-	            sound = "sss"
-	            console.warn(f"{animal}s go " + sound * 5)
-	        `)
-	    }
-	</script>
-		<p><a href="#">Learn more</a></p>
+		<p><a href="calculator.html" class="button-link">Soma com o Python no Browser</a></p>
 	</main>
 </body>
 </html>
